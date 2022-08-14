@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7757CC4828A88C150075E106 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757CC4728A88C150075E106 /* CountryViewController.swift */; };
+		7757CC4A28A88C2D0075E106 /* UsaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757CC4928A88C2D0075E106 /* UsaViewController.swift */; };
+		7757CC4C28A88C3A0075E106 /* BrasilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757CC4B28A88C3A0075E106 /* BrasilViewController.swift */; };
+		7757CC4E28A88C460075E106 /* JapanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757CC4D28A88C460075E106 /* JapanViewController.swift */; };
 		775B8468288B4855001D3285 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775B8467288B4855001D3285 /* WebServices.swift */; };
 		775B846B288B500A001D3285 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775B846A288B500A001D3285 /* Article.swift */; };
 		7783C0D5288B65BC007525FB /* ArticleViewModelFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7783C0D4288B65BC007525FB /* ArticleViewModelFile.swift */; };
@@ -21,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7757CC4728A88C150075E106 /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
+		7757CC4928A88C2D0075E106 /* UsaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsaViewController.swift; sourceTree = "<group>"; };
+		7757CC4B28A88C3A0075E106 /* BrasilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrasilViewController.swift; sourceTree = "<group>"; };
+		7757CC4D28A88C460075E106 /* JapanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanViewController.swift; sourceTree = "<group>"; };
 		775B8467288B4855001D3285 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
 		775B846A288B500A001D3285 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		7783C0D4288B65BC007525FB /* ArticleViewModelFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModelFile.swift; sourceTree = "<group>"; };
@@ -117,6 +125,10 @@
 			isa = PBXGroup;
 			children = (
 				77D6FAB6288B2D4E00EA8D6C /* NewListTableViewController.swift */,
+				7757CC4728A88C150075E106 /* CountryViewController.swift */,
+				7757CC4928A88C2D0075E106 /* UsaViewController.swift */,
+				7757CC4B28A88C3A0075E106 /* BrasilViewController.swift */,
+				7757CC4D28A88C460075E106 /* JapanViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -199,12 +211,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				77D6FAA0288B2C1400EA8D6C /* AppDelegate.swift in Sources */,
+				7757CC4E28A88C460075E106 /* JapanViewController.swift in Sources */,
+				7757CC4828A88C150075E106 /* CountryViewController.swift in Sources */,
+				7757CC4A28A88C2D0075E106 /* UsaViewController.swift in Sources */,
 				7783C0D5288B65BC007525FB /* ArticleViewModelFile.swift in Sources */,
 				775B846B288B500A001D3285 /* Article.swift in Sources */,
 				77D6FAA2288B2C1400EA8D6C /* SceneDelegate.swift in Sources */,
 				775B8468288B4855001D3285 /* WebServices.swift in Sources */,
 				7783C0D8288B70D0007525FB /* ArticleTableViewCell.swift in Sources */,
 				77D6FAB7288B2D4E00EA8D6C /* NewListTableViewController.swift in Sources */,
+				7757CC4C28A88C3A0075E106 /* BrasilViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
