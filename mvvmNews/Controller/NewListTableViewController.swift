@@ -6,6 +6,9 @@ class NewsListTableViewController: UITableViewController {
     
     private var articleListVM: ArticleListViewModel!
     
+    var country: String = ""
+    var category: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setup ()
@@ -15,7 +18,7 @@ class NewsListTableViewController: UITableViewController {
     private func setup() {
         self.navigationController?.navigationBar.prefersLargeTitles = true
         
-        let url = URL(string: "https://newsapi.org/v2/top-headlines?country=br&apiKey=0dc472add56e42e4bf2b0a7a8425d03d")!
+        let url = URL(string: "https://newsapi.org/v2/top-headlines?country=\(country)&category=\(category)&apiKey=0dc472add56e42e4bf2b0a7a8425d03d")!
         
         WebService().makeRequest(url: url) { articles in
             
