@@ -49,7 +49,13 @@ class NewsListTableViewController: UITableViewController {
         
        cell.titleLabel.text = articleVM.title
        cell.descriptonLabel.text = articleVM.description
-       cell.dateLabel.text = articleVM.publishedAt
+        
+        let isoDate = articleVM.publishedAt
+
+        let dateFormatter = ISO8601DateFormatter()
+        let date = dateFormatter.date(from:isoDate)!
+        
+        cell.dateLabel.text = date.formatted()
         
         return cell
     }

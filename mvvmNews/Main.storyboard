@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--GoodNews-->
+        <!--News-->
         <scene sceneID="Y5d-GQ-haa">
             <objects>
                 <tableViewController id="K7R-BX-jFh" customClass="NewsListTableViewController" customModule="mvvmNews" customModuleProvider="target" sceneMemberID="viewController">
@@ -27,20 +27,20 @@
                                             <rect key="frame" x="20" y="11" width="374" height="98"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeX-Xi-Xc5">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="33"/>
+                                                    <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1o8-ZE-VhP">
-                                                    <rect key="frame" x="0.0" y="48" width="374" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <rect key="frame" x="0.0" y="49" width="374" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="14"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gq-gy-iaf">
-                                                    <rect key="frame" x="0.0" y="81" width="374" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <rect key="frame" x="0.0" y="81.5" width="374" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="14"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -66,7 +66,7 @@
                             <outlet property="delegate" destination="K7R-BX-jFh" id="Qk3-fK-chA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="GoodNews" id="IEY-2n-rEC"/>
+                    <navigationItem key="navigationItem" title="News" largeTitleDisplayMode="always" id="IEY-2n-rEC"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pqH-0j-LJJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,54 +80,96 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oe-P4-WfA">
-                                <rect key="frame" x="50" y="406" width="314" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.12740794450000001" green="0.29737724570000001" blue="0.6152147577" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oe-P4-WfA">
+                                <rect key="frame" x="20" y="553" width="374" height="130"/>
+                                <color key="backgroundColor" red="0.043137259779999999" green="0.1411764771" blue="0.48627454040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="MXl-R4-XzN"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="USA">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" title="🇺🇸 USA">
+                                    <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="35"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="usaAction:" destination="XC4-2C-D5Z" eventType="touchUpInside" id="Kfz-Bb-3Ds"/>
                                     <action selector="usaAction:" destination="om0-xQ-o0H" eventType="touchUpInside" id="ySI-OL-h9a"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eru-Zg-Bd6">
-                                <rect key="frame" x="50" y="567" width="314" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.12740794450000001" green="0.29737724570000001" blue="0.6152147577" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eru-Zg-Bd6">
+                                <rect key="frame" x="20" y="704" width="374" height="130"/>
+                                <color key="backgroundColor" red="0.66534565343070273" green="0.21692160702379354" blue="0.16796123053341552" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="4Qt-Rb-bEF"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Japan">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" title="🇯🇵 Japan">
+                                    <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="35"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="japanAction:" destination="om0-xQ-o0H" eventType="touchUpInside" id="CsI-uc-Qsq"/>
                                     <action selector="japanAction:" destination="XC4-2C-D5Z" eventType="touchUpInside" id="VON-Um-dza"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNy-WA-l34">
-                                <rect key="frame" x="50" y="241" width="314" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.12740794450000001" green="0.29737724570000001" blue="0.6152147577" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNy-WA-l34">
+                                <rect key="frame" x="20" y="402" width="374" height="130"/>
+                                <color key="backgroundColor" red="0.26666314457434237" green="0.5" blue="0.35539062543794042" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="BBE-xs-aCU"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Brasil">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" title="🇧🇷 Brasil">
+                                    <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="35"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="brasilAction:" destination="om0-xQ-o0H" eventType="touchUpInside" id="Dxc-hB-tlI"/>
                                     <action selector="brasilAction:" destination="XC4-2C-D5Z" eventType="touchUpInside" id="u1D-mK-yRY"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dzh-dx-D6P">
+                                <rect key="frame" x="135" y="369" width="145" height="23"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ícone-liso-do-vetor-das-notícias-do-mundo-ilustração-do-logotipo-do-símbolo-da-notícia-95819924" translatesAutoresizingMaskIntoConstraints="NO" id="ZEv-I9-wry">
+                                <rect key="frame" x="13" y="88" width="389" height="273"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="273" id="ccn-sf-peb"/>
+                                    <constraint firstAttribute="width" constant="389" id="nds-lP-8CC"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aJD-vi-CEU"/>
-                        <color key="backgroundColor" red="0.33333334329999997" green="0.33333334329999997" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eru-Zg-Bd6" firstAttribute="leading" secondItem="aJD-vi-CEU" secondAttribute="leading" constant="20" id="31p-35-RKi"/>
+                            <constraint firstItem="NNy-WA-l34" firstAttribute="leading" secondItem="aJD-vi-CEU" secondAttribute="leading" constant="20" id="3aY-9y-Fxs"/>
+                            <constraint firstItem="0oe-P4-WfA" firstAttribute="leading" secondItem="aJD-vi-CEU" secondAttribute="leading" constant="20" id="Aup-Yv-w5g"/>
+                            <constraint firstItem="Dzh-dx-D6P" firstAttribute="leading" secondItem="aJD-vi-CEU" secondAttribute="leading" constant="135" id="C7i-ak-Lsn"/>
+                            <constraint firstItem="ZEv-I9-wry" firstAttribute="leading" secondItem="aJD-vi-CEU" secondAttribute="leading" constant="13" id="IiX-lC-DfS"/>
+                            <constraint firstItem="eru-Zg-Bd6" firstAttribute="top" secondItem="0oe-P4-WfA" secondAttribute="bottom" constant="21" id="JQH-mR-yig"/>
+                            <constraint firstItem="aJD-vi-CEU" firstAttribute="trailing" secondItem="Dzh-dx-D6P" secondAttribute="trailing" constant="134" id="KNu-Th-gMN"/>
+                            <constraint firstItem="aJD-vi-CEU" firstAttribute="trailing" secondItem="eru-Zg-Bd6" secondAttribute="trailing" constant="20" id="V05-BO-KXh"/>
+                            <constraint firstItem="NNy-WA-l34" firstAttribute="top" secondItem="Dzh-dx-D6P" secondAttribute="bottom" constant="10" id="V7V-tK-Tjt"/>
+                            <constraint firstItem="aJD-vi-CEU" firstAttribute="trailing" secondItem="0oe-P4-WfA" secondAttribute="trailing" constant="20" id="cF3-q6-kfg"/>
+                            <constraint firstItem="aJD-vi-CEU" firstAttribute="trailing" secondItem="ZEv-I9-wry" secondAttribute="trailing" constant="12" id="fOh-JX-jVm"/>
+                            <constraint firstItem="0oe-P4-WfA" firstAttribute="top" secondItem="NNy-WA-l34" secondAttribute="bottom" constant="21" id="g0F-2J-Q3D"/>
+                            <constraint firstItem="aJD-vi-CEU" firstAttribute="trailing" secondItem="NNy-WA-l34" secondAttribute="trailing" constant="20" id="gMj-gk-5Gz"/>
+                            <constraint firstItem="Dzh-dx-D6P" firstAttribute="top" secondItem="ZEv-I9-wry" secondAttribute="bottom" constant="8" symbolic="YES" id="jhJ-a2-grO"/>
+                            <constraint firstItem="eru-Zg-Bd6" firstAttribute="width" secondItem="NNy-WA-l34" secondAttribute="width" id="jt5-LM-n1Q"/>
+                            <constraint firstItem="ZEv-I9-wry" firstAttribute="top" secondItem="aJD-vi-CEU" secondAttribute="top" id="lJh-Tl-AJI"/>
+                            <constraint firstItem="0oe-P4-WfA" firstAttribute="width" secondItem="NNy-WA-l34" secondAttribute="width" id="wmI-7s-Cum"/>
+                            <constraint firstItem="aJD-vi-CEU" firstAttribute="bottom" secondItem="eru-Zg-Bd6" secondAttribute="bottom" constant="28" id="ygX-bw-Ey2"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="K4X-RA-koZ"/>
                     <connections>
+                        <outlet property="brasilButton" destination="NNy-WA-l34" id="Arm-b1-Nze"/>
+                        <outlet property="japanButton" destination="eru-Zg-Bd6" id="ypv-JL-uNL"/>
+                        <outlet property="usaButton" destination="0oe-P4-WfA" id="seo-Zg-cu7"/>
                         <segue destination="W4r-XC-WjX" kind="show" identifier="toBrasil" id="ITT-da-kvV"/>
                         <segue destination="cqV-SR-MoG" kind="show" identifier="toUsa" id="k00-mc-eYb"/>
                         <segue destination="s4g-fH-r2d" kind="show" identifier="toJapan" id="20J-wu-CaL"/>
@@ -136,9 +178,9 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WHK-l8-DIW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="om0-xQ-o0H" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3467" y="-204"/>
+            <point key="canvasLocation" x="3466.666666666667" y="-204.24107142857142"/>
         </scene>
-        <!--Brasil View Controller-->
+        <!--Brasil-->
         <scene sceneID="iAG-6H-zZK">
             <objects>
                 <viewController id="W4r-XC-WjX" customClass="BrasilViewController" customModule="mvvmNews" customModuleProvider="target" sceneMemberID="viewController">
@@ -146,54 +188,90 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZJ-UP-gxo">
-                                <rect key="frame" x="50" y="569" width="314" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZJ-UP-gxo">
+                                <rect key="frame" x="20" y="627" width="374" height="155"/>
                                 <color key="backgroundColor" red="0.12740794450000001" green="0.29737724570000001" blue="0.6152147577" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="1ZE-QN-c1T"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Negócios">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" title="📊 Negócios">
+                                    <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="45"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="K7R-BX-jFh" kind="show" identifier="negociosTableView" id="yMc-9m-hi3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCu-mq-IVI">
-                                <rect key="frame" x="50" y="408" width="314" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCu-mq-IVI">
+                                <rect key="frame" x="20" y="451" width="374" height="155"/>
                                 <color key="backgroundColor" red="0.12740794450000001" green="0.29737724570000001" blue="0.6152147577" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="KaI-ug-dlq"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Tecnologia">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" title="💻 Tecnologia">
+                                    <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="45"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="K7R-BX-jFh" kind="show" identifier="tecnologiaTableView" id="8wI-Ub-kMe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Am-xZ-eXj">
-                                <rect key="frame" x="50" y="243" width="314" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Am-xZ-eXj">
+                                <rect key="frame" x="20" y="275" width="374" height="155"/>
                                 <color key="backgroundColor" red="0.12740794450000001" green="0.29737724570000001" blue="0.6152147577" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="h9n-97-1kx"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Esportes">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" title="⚽️ Esportes">
+                                    <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="45"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="K7R-BX-jFh" kind="show" identifier="esportesTableView" id="xYH-oX-Dkk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha a categoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dz-ZV-U25">
+                                <rect key="frame" x="114" y="228.5" width="186.5" height="27.5"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ícone-liso-do-vetor-das-notícias-do-mundo-ilustração-do-logotipo-do-símbolo-da-notícia-95819924" translatesAutoresizingMaskIntoConstraints="NO" id="1mK-oR-ulC">
+                                <rect key="frame" x="150" y="110" width="115" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ivn-uS-c6e"/>
-                        <color key="backgroundColor" red="0.33333334329999997" green="0.33333334329999997" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0Am-xZ-eXj" firstAttribute="leading" secondItem="ivn-uS-c6e" secondAttribute="leading" constant="20" id="605-iT-VYd"/>
+                            <constraint firstItem="ivn-uS-c6e" firstAttribute="trailing" secondItem="0Am-xZ-eXj" secondAttribute="trailing" constant="20" id="7LL-ud-rTM"/>
+                            <constraint firstItem="JCu-mq-IVI" firstAttribute="top" secondItem="0Am-xZ-eXj" secondAttribute="bottom" constant="21" id="D4N-hr-Vy3"/>
+                            <constraint firstItem="ivn-uS-c6e" firstAttribute="bottom" secondItem="EZJ-UP-gxo" secondAttribute="bottom" constant="80" id="Kzm-PI-8sN"/>
+                            <constraint firstItem="EZJ-UP-gxo" firstAttribute="top" secondItem="JCu-mq-IVI" secondAttribute="bottom" constant="21" id="VGN-RU-zMn"/>
+                            <constraint firstItem="JCu-mq-IVI" firstAttribute="height" secondItem="0Am-xZ-eXj" secondAttribute="height" id="WPi-WE-cVW"/>
+                            <constraint firstItem="4dz-ZV-U25" firstAttribute="centerX" secondItem="uBT-ZC-Ytk" secondAttribute="centerX" id="bbp-7s-ojc"/>
+                            <constraint firstItem="EZJ-UP-gxo" firstAttribute="leading" secondItem="ivn-uS-c6e" secondAttribute="leading" constant="20" id="eks-qk-Hd0"/>
+                            <constraint firstItem="ivn-uS-c6e" firstAttribute="trailing" secondItem="JCu-mq-IVI" secondAttribute="trailing" constant="20" id="esv-7i-mqx"/>
+                            <constraint firstItem="0Am-xZ-eXj" firstAttribute="top" secondItem="4dz-ZV-U25" secondAttribute="bottom" constant="19" id="kk9-Bw-KMr"/>
+                            <constraint firstItem="ivn-uS-c6e" firstAttribute="trailing" secondItem="EZJ-UP-gxo" secondAttribute="trailing" constant="20" id="rHz-Wf-yBl"/>
+                            <constraint firstItem="EZJ-UP-gxo" firstAttribute="height" secondItem="0Am-xZ-eXj" secondAttribute="height" id="uai-uk-8Jb"/>
+                            <constraint firstItem="JCu-mq-IVI" firstAttribute="leading" secondItem="ivn-uS-c6e" secondAttribute="leading" constant="20" id="wpk-KK-khq"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="26F-r8-Sw9"/>
+                    <navigationItem key="navigationItem" title="Brasil" id="26F-r8-Sw9"/>
+                    <connections>
+                        <outlet property="businessButton" destination="EZJ-UP-gxo" id="01Y-Td-8c0"/>
+                        <outlet property="sportsButton" destination="0Am-xZ-eXj" id="NE2-pq-fTN"/>
+                        <outlet property="techButton" destination="JCu-mq-IVI" id="wVe-9I-OOg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u7U-gJ-LaE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4445" y="-226"/>
+            <point key="canvasLocation" x="4443.4782608695659" y="-226.33928571428569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="m72-YH-11S">
@@ -203,6 +281,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4dq-xn-dDT">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="25"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="33"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -213,7 +297,7 @@
             </objects>
             <point key="canvasLocation" x="2537.68115942029" y="-204.24107142857142"/>
         </scene>
-        <!--Japan View Controller-->
+        <!--Japan-->
         <scene sceneID="Aig-pH-6Gi">
             <objects>
                 <viewController id="s4g-fH-r2d" customClass="JapanViewController" customModule="mvvmNews" customModuleProvider="target" sceneMemberID="viewController">
@@ -221,56 +305,93 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hk3-SW-Rxv">
-                                <rect key="frame" x="50" y="569" width="314" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hk3-SW-Rxv">
+                                <rect key="frame" x="20" y="627" width="374" height="155"/>
                                 <color key="backgroundColor" red="0.12740794450000001" green="0.29737724570000001" blue="0.6152147577" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="wZh-a4-hEv"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="仕事">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" title="📊 仕事">
+                                    <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="45"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="K7R-BX-jFh" kind="show" identifier="businessjpTableView" id="Swb-td-QR0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSZ-ch-Y3b">
-                                <rect key="frame" x="50" y="408" width="314" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSZ-ch-Y3b">
+                                <rect key="frame" x="20" y="451" width="374" height="155"/>
                                 <color key="backgroundColor" red="0.12740794450000001" green="0.29737724570000001" blue="0.6152147577" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="0lI-Yd-U84"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="テクノロジー">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" title="💻 テクノロジー">
+                                    <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="45"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="K7R-BX-jFh" kind="show" identifier="techonologyjpTableView" id="TFq-wq-rMT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIg-j1-yax">
-                                <rect key="frame" x="50" y="243" width="314" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIg-j1-yax">
+                                <rect key="frame" x="20" y="275" width="374" height="155"/>
                                 <color key="backgroundColor" red="0.12740794450000001" green="0.29737724570000001" blue="0.6152147577" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="6X9-Zb-K2f"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="スポーツ">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" title="⚽️ スポーツ">
+                                    <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="45"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="K7R-BX-jFh" kind="show" identifier="sportsjpTableView" id="1Bx-PO-82o"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カテゴリを選択" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VxA-tr-pNh">
+                                <rect key="frame" x="123" y="228.5" width="168" height="27.5"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ícone-liso-do-vetor-das-notícias-do-mundo-ilustração-do-logotipo-do-símbolo-da-notícia-95819924" translatesAutoresizingMaskIntoConstraints="NO" id="lAU-lw-uLI">
+                                <rect key="frame" x="150" y="101" width="115" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gRN-nJ-89k"/>
-                        <color key="backgroundColor" red="0.33333334329999997" green="0.33333334329999997" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hk3-SW-Rxv" firstAttribute="top" secondItem="HSZ-ch-Y3b" secondAttribute="bottom" constant="21" id="1UG-7r-Wrf"/>
+                            <constraint firstItem="bIg-j1-yax" firstAttribute="leading" secondItem="gRN-nJ-89k" secondAttribute="leading" constant="20" id="CGP-Qj-GqB"/>
+                            <constraint firstItem="gRN-nJ-89k" firstAttribute="trailing" secondItem="bIg-j1-yax" secondAttribute="trailing" constant="20" id="HEu-8r-eR4"/>
+                            <constraint firstItem="gRN-nJ-89k" firstAttribute="bottom" secondItem="hk3-SW-Rxv" secondAttribute="bottom" constant="80" id="IJc-oh-j25"/>
+                            <constraint firstItem="HSZ-ch-Y3b" firstAttribute="top" secondItem="bIg-j1-yax" secondAttribute="bottom" constant="21" id="Mij-15-1ck"/>
+                            <constraint firstItem="hk3-SW-Rxv" firstAttribute="top" secondItem="HSZ-ch-Y3b" secondAttribute="bottom" constant="21" id="Ov0-md-gC6"/>
+                            <constraint firstItem="bIg-j1-yax" firstAttribute="top" secondItem="VxA-tr-pNh" secondAttribute="bottom" constant="19" id="Wlh-f8-Q4Q"/>
+                            <constraint firstItem="HSZ-ch-Y3b" firstAttribute="leading" secondItem="gRN-nJ-89k" secondAttribute="leading" constant="20" id="Y5A-PJ-5rp"/>
+                            <constraint firstItem="gRN-nJ-89k" firstAttribute="trailing" secondItem="HSZ-ch-Y3b" secondAttribute="trailing" constant="20" id="fsR-ge-Bw0"/>
+                            <constraint firstItem="HSZ-ch-Y3b" firstAttribute="height" secondItem="bIg-j1-yax" secondAttribute="height" id="iyi-ph-mcz"/>
+                            <constraint firstItem="VxA-tr-pNh" firstAttribute="centerX" secondItem="Ago-1K-cVH" secondAttribute="centerX" id="r8I-Nn-Vad"/>
+                            <constraint firstItem="hk3-SW-Rxv" firstAttribute="height" secondItem="bIg-j1-yax" secondAttribute="height" id="sjA-al-RkH"/>
+                            <constraint firstItem="hk3-SW-Rxv" firstAttribute="leading" secondItem="gRN-nJ-89k" secondAttribute="leading" constant="20" id="tsj-hq-qhP"/>
+                            <constraint firstItem="gRN-nJ-89k" firstAttribute="trailing" secondItem="hk3-SW-Rxv" secondAttribute="trailing" constant="20" id="xAF-9D-vot"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Ydp-fc-PoG"/>
+                    <navigationItem key="navigationItem" title="Japan" id="Ydp-fc-PoG"/>
+                    <connections>
+                        <outlet property="businessButton" destination="hk3-SW-Rxv" id="c5j-l3-7f7"/>
+                        <outlet property="sportsButton" destination="bIg-j1-yax" id="t8u-cB-j9G"/>
+                        <outlet property="techButton" destination="HSZ-ch-Y3b" id="wFG-lz-xNA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="snX-83-6dc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4445" y="479"/>
         </scene>
-        <!--Usa View Controller-->
+        <!--USA-->
         <scene sceneID="cJr-OO-ChE">
             <objects>
                 <viewController id="cqV-SR-MoG" customClass="UsaViewController" customModule="mvvmNews" customModuleProvider="target" sceneMemberID="viewController">
@@ -278,57 +399,96 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0c-fW-AaY">
-                                <rect key="frame" x="50" y="569" width="314" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0c-fW-AaY">
+                                <rect key="frame" x="20" y="627" width="374" height="155"/>
                                 <color key="backgroundColor" red="0.12740794450000001" green="0.29737724570000001" blue="0.6152147577" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="jcK-8L-9dZ"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Business">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" title="📊 Business">
+                                    <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="45"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="K7R-BX-jFh" kind="show" identifier="businessTableView" id="Jq4-mc-jgu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7X-PH-ait">
-                                <rect key="frame" x="50" y="408" width="314" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7X-PH-ait">
+                                <rect key="frame" x="20" y="451" width="374" height="155"/>
                                 <color key="backgroundColor" red="0.12740794450000001" green="0.29737724570000001" blue="0.6152147577" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="y6k-Gy-fJh"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Technology">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" title="💻 Technology">
+                                    <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="45"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="K7R-BX-jFh" kind="show" identifier="technologyTableView" id="xXT-Fs-T0f"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X72-0m-vTj">
-                                <rect key="frame" x="50" y="243" width="314" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X72-0m-vTj">
+                                <rect key="frame" x="20" y="275" width="374" height="155"/>
                                 <color key="backgroundColor" red="0.12740794450000001" green="0.29737724570000001" blue="0.6152147577" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="zm8-J1-aaX"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Sports">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" title="⚽️ Sports">
+                                    <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="45"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="K7R-BX-jFh" kind="show" identifier="sportsTableView" id="aY7-ei-eyR"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yo-Ad-Woy">
+                                <rect key="frame" x="126.5" y="228.5" width="161" height="27.5"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ícone-liso-do-vetor-das-notícias-do-mundo-ilustração-do-logotipo-do-símbolo-da-notícia-95819924" translatesAutoresizingMaskIntoConstraints="NO" id="2Vf-Dh-BKn">
+                                <rect key="frame" x="150" y="110" width="115" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fg3-5t-xvY"/>
-                        <color key="backgroundColor" red="0.33333334329999997" green="0.33333334329999997" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="X72-0m-vTj" firstAttribute="leading" secondItem="fg3-5t-xvY" secondAttribute="leading" constant="20" id="4Dr-v2-p8r"/>
+                            <constraint firstItem="fg3-5t-xvY" firstAttribute="trailing" secondItem="U7X-PH-ait" secondAttribute="trailing" constant="20" id="GG9-jD-dDt"/>
+                            <constraint firstItem="U7X-PH-ait" firstAttribute="leading" secondItem="fg3-5t-xvY" secondAttribute="leading" constant="20" id="Gda-pc-Ecj"/>
+                            <constraint firstItem="U7X-PH-ait" firstAttribute="height" secondItem="X72-0m-vTj" secondAttribute="height" id="MKp-WB-eZn"/>
+                            <constraint firstItem="X72-0m-vTj" firstAttribute="top" secondItem="6yo-Ad-Woy" secondAttribute="bottom" constant="19" id="RPu-T1-rBK"/>
+                            <constraint firstItem="L0c-fW-AaY" firstAttribute="top" secondItem="U7X-PH-ait" secondAttribute="bottom" constant="21" id="RV1-jR-qd9"/>
+                            <constraint firstItem="L0c-fW-AaY" firstAttribute="height" secondItem="X72-0m-vTj" secondAttribute="height" id="Sf6-pR-ASg"/>
+                            <constraint firstItem="fg3-5t-xvY" firstAttribute="trailing" secondItem="L0c-fW-AaY" secondAttribute="trailing" constant="20" id="Sq4-kN-dZM"/>
+                            <constraint firstItem="fg3-5t-xvY" firstAttribute="bottom" secondItem="L0c-fW-AaY" secondAttribute="bottom" constant="80" id="Uos-Iv-A5x"/>
+                            <constraint firstItem="U7X-PH-ait" firstAttribute="top" secondItem="X72-0m-vTj" secondAttribute="bottom" constant="21" id="YfU-Fk-2qZ"/>
+                            <constraint firstItem="fg3-5t-xvY" firstAttribute="trailing" secondItem="X72-0m-vTj" secondAttribute="trailing" constant="20" id="j1I-xw-d2k"/>
+                            <constraint firstItem="6yo-Ad-Woy" firstAttribute="centerX" secondItem="NQK-Z7-2DE" secondAttribute="centerX" id="jOs-e0-ZaO"/>
+                            <constraint firstItem="L0c-fW-AaY" firstAttribute="leading" secondItem="fg3-5t-xvY" secondAttribute="leading" constant="20" id="zNx-Sp-S9g"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="0pl-TG-9uC"/>
+                    <navigationItem key="navigationItem" title="USA" id="0pl-TG-9uC"/>
+                    <connections>
+                        <outlet property="businessButton" destination="L0c-fW-AaY" id="Pgx-Dx-8ax"/>
+                        <outlet property="sportsButton" destination="X72-0m-vTj" id="TSw-Cs-4RZ"/>
+                        <outlet property="techButton" destination="U7X-PH-ait" id="Ud5-0t-rmN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VZP-WQ-ksa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4445" y="-997"/>
+            <point key="canvasLocation" x="4443.4782608695659" y="-997.09821428571422"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Jq4-mc-jgu"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="ícone-liso-do-vetor-das-notícias-do-mundo-ilustração-do-logotipo-do-símbolo-da-notícia-95819924" width="800" height="800"/>
+    </resources>
 </document>

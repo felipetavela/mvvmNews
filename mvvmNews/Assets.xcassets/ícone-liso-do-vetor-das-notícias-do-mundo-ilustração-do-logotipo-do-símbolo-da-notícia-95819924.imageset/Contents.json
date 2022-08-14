@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "ícone-liso-do-vetor-das-notícias-do-mundo-ilustração-do-logotipo-do-símbolo-da-notícia-95819924.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}
