@@ -87,7 +87,7 @@
                                     <constraint firstAttribute="height" constant="130" id="MXl-R4-XzN"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="🇺🇸 USA">
+                                <buttonConfiguration key="configuration" style="plain" title="🇺🇸">
                                     <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="35"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
@@ -103,7 +103,7 @@
                                     <constraint firstAttribute="height" constant="130" id="4Qt-Rb-bEF"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="🇯🇵 Japan">
+                                <buttonConfiguration key="configuration" style="plain" title="🇯🇵">
                                     <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="35"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
@@ -119,7 +119,7 @@
                                     <constraint firstAttribute="height" constant="130" id="BBE-xs-aCU"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="🇧🇷 Brasil">
+                                <buttonConfiguration key="configuration" style="plain" title="🇧🇷">
                                     <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="35"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
@@ -195,8 +195,8 @@
                                     <constraint firstAttribute="height" constant="155" id="1ZE-QN-c1T"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="📊 Negócios">
-                                    <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="45"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Negócios">
+                                    <fontDescription key="titleFontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -210,8 +210,8 @@
                                     <constraint firstAttribute="height" constant="155" id="KaI-ug-dlq"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="💻 Tecnologia">
-                                    <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="45"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tecnologia">
+                                    <fontDescription key="titleFontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -225,8 +225,8 @@
                                     <constraint firstAttribute="height" constant="155" id="h9n-97-1kx"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="⚽️ Esportes">
-                                    <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="45"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Esportes">
+                                    <fontDescription key="titleFontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -312,8 +312,8 @@
                                     <constraint firstAttribute="height" constant="155" id="wZh-a4-hEv"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="📊 仕事">
-                                    <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="45"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" 仕事">
+                                    <fontDescription key="titleFontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -327,8 +327,8 @@
                                     <constraint firstAttribute="height" constant="155" id="0lI-Yd-U84"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="💻 テクノロジー">
-                                    <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="45"/>
+                                <buttonConfiguration key="configuration" style="plain" title="テクノロジー">
+                                    <fontDescription key="titleFontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -342,8 +342,8 @@
                                     <constraint firstAttribute="height" constant="155" id="6X9-Zb-K2f"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="⚽️ スポーツ">
-                                    <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="45"/>
+                                <buttonConfiguration key="configuration" style="plain" title="スポーツ">
+                                    <fontDescription key="titleFontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -406,8 +406,8 @@
                                     <constraint firstAttribute="height" constant="155" id="jcK-8L-9dZ"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="📊 Business">
-                                    <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="45"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Business">
+                                    <fontDescription key="titleFontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -421,8 +421,8 @@
                                     <constraint firstAttribute="height" constant="155" id="y6k-Gy-fJh"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="💻 Technology">
-                                    <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="45"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Technology">
+                                    <fontDescription key="titleFontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -436,8 +436,8 @@
                                     <constraint firstAttribute="height" constant="155" id="zm8-J1-aaX"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="⚽️ Sports">
-                                    <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="45"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sports">
+                                    <fontDescription key="titleFontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
