@@ -21,6 +21,8 @@ class BrasilViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.isNavigationBarHidden = true
+        
         sportsButton.backgroundColor = UIColor(patternImage: UIImage(named: "sport")!).withAlphaComponent(0.6)
         
         sportsButton.layer.cornerRadius = 10

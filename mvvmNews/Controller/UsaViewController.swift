@@ -9,8 +9,11 @@ class UsaViewController: UIViewController {
     @IBOutlet weak var techButton: UIButton!
     @IBOutlet weak var businessButton: UIButton!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.isNavigationBarHidden = true
         
         sportsButton.backgroundColor = UIColor(patternImage: UIImage(named: "sport")!).withAlphaComponent(0.5)
         

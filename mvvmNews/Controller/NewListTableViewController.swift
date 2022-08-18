@@ -12,7 +12,8 @@ class NewsListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup ()
-        
+        overrideUserInterfaceStyle = .light
+        self.navigationController?.isNavigationBarHidden = false
     }
 
     private func setup() {
